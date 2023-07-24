@@ -1,0 +1,12 @@
+{
+	"private": "true",
+	"type": "module",
+	"engines": {
+		"node": "20.5.0"
+	},
+	"devDependencies": {
+		"eslint": "8.45.0",
+		"eslint-config-sheriff": "14.1.1",
+		"eslint-define-config": "1.21.0"
+	}
+}
