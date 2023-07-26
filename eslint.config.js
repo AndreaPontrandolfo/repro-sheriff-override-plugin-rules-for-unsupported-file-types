@@ -1,5 +1,7 @@
+import astroEslintParser from 'astro-eslint-parser';
 import sheriff from 'eslint-config-sheriff';
 import { defineFlatConfig } from 'eslint-define-config';
+import astro from 'eslint-plugin-astro';
 // import react from 'eslint-plugin-react';
 
 const sheriffOptions = {
@@ -29,8 +31,16 @@ export default defineFlatConfig([
   },
   {
     files: ['**/*.astro'],
-    // plugins: {
-    //   react,
-    // },
+    plugins: {
+      astro,
+      // react,
+    },
+    languageOptions: {
+      parser: astroEslintParser,
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro'],
+      },
+    },
   },
 ]);

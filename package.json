@@ -5,12 +5,19 @@
     "node": "20.5.0"
   },
   "scripts": {
-    "test:astro": "eslint --print-config src/index.astro",
-    "test:jsx": "eslint --print-config src/index.jsx"
+    "lint:astro": "eslint src/index.astro",
+    "lint:tsx": "eslint src/index.tsx"
   },
   "devDependencies": {
+    "@types/react": "18.2.16",
+    "astro": "2.9.3",
     "eslint": "8.45.0",
     "eslint-config-sheriff": "14.1.1",
-    "eslint-define-config": "1.21.0"
+    "eslint-define-config": "1.21.0",
+    "eslint-plugin-astro": "0.27.2",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "react": "18.2.0"
   }
 }
