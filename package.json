@@ -10,11 +10,13 @@
   },
   "devDependencies": {
     "@types/react": "18.2.16",
+    "@typescript-eslint/parser": "5.62.0",
     "astro": "2.9.3",
     "eslint": "8.45.0",
     "eslint-config-sheriff": "14.1.1",
     "eslint-define-config": "1.21.0",
     "eslint-plugin-astro": "0.27.2",
+    "eslint-plugin-react": "7.33.1",
     "typescript": "5.1.6"
   },
   "dependencies": {
