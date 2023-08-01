@@ -30,5 +30,5 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": ["**/*.tsx"]
+  "include": ["**/*.tsx", "**/*.astro"]
 }
